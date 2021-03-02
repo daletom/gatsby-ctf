@@ -54,7 +54,7 @@ export default ({ data }) => {
         <Image
         fluid={{
           ...node.heroImage.imgixImage.fluid,
-          sizes: '(min-width: 1024px) 30vw, (min-width: 768px) 50vw, 100vw',
+          sizes: '(min-width: 1024px) calc(30vw - 128px), (min-width: 768px) calc(50vw - 100px), calc(100vw - 70px)',
           aspectRatio: 1.8/1
         }}
         />
