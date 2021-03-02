@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-
+require('dotenv').config()
 const { ImgixSourceType } = require("@imgix/gatsby");
 
 module.exports = {
