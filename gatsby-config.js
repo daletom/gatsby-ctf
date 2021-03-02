@@ -21,14 +21,14 @@ module.exports = {
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
         spaceId: `mshe2wat8vkh`,
-        accessToken: `zx17e3KQboCTO7qg77suB3izAUmfdGIRzV7Eq6M7Y_U`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     {
       resolve: `@imgix/gatsby`,
       options: {
         domain: 'tom-proxy.imgix.net',
-        secureURLToken: 'UeCnTaStKyB9Vrca',
+        secureURLToken: process.env.IMGIX_SECURE_TOKEN,
         sourceType: ImgixSourceType.WebProxy,
         defaultImgixParams: { auto: 'format,compress' },
         fields: [
